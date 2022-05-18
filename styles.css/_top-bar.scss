@@ -2,22 +2,62 @@
 
 .top-bar {
 	grid-area: 1 / 2 / 2 / 4;
+	background: #f8fafc;
+	border-radius: 0 50px 0 0;
 	div {
 		@include displayFlex();
 		height: 100%;
-		background: lightgray;
-		margin: 2px;
 	}
 	.search-bar {
+		justify-content: left;
 		float: left;
 		width: 50%;
+		svg {
+			position: relative;
+			height: 24px;
+			width: 24px;
+			margin: 0 -10% 0 10%;
+		}
+		input {
+			background: #e2e8f0;
+			height: 48px;
+			width: 75%;
+			padding: 0 14px 0 40px;
+			margin: 0 0 0 5%;
+			font-size: 24px;
+			border: none;
+			border-radius: 360px;
+			outline: none;
+		}
+		[type="search"]::-webkit-search-cancel-button {
+			height: 14px;
+			width: 14px;
+			-webkit-appearance: none;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+		}
 	}
 	.profile {
 		float: right;
 		width: 25%;
-	}
-	.bell {
-		float: right;
-		width: 10%;
+		#bell {
+			padding: 5%;
+			cursor: pointer;
+		}
+		img {
+			max-width: 70%;
+			max-height: 70%;
+			border-radius: 360px;
+			cursor: pointer;
+		}
+		p {
+			font-size: 24px;
+			margin: 0 0 0 5%;
+		}
+		#chevron {
+			cursor: pointer;
+		}
 	}
 }
