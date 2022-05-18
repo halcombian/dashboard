@@ -6,13 +6,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Dashboard</title>
 		<link rel="stylesheet" href="styles.css/style.css" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+		</style>
 	</head>
 	<body>
 		<div class="main-container">
 			<div class="top-bar">
-				<div class="search-bar"></div>
-				<div class="profile"></div>
-				<div class="bell"></div>
+				<div class="search-bar">
+					<svg>
+						<path
+							d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+						></path>
+					</svg>
+					<input type="search" id="search-input" placeholder="Search..." />
+				</div>
+				<div class="profile">
+					<img src="images/bell-outline.png" alt="" id="bell" />
+					<img
+						src="images/big-chungus-profile-pic.png"
+						alt=""
+						id="profile-pic"
+					/>
+					<p id="profile-name">Big Chungus</p>
+					<img src="images/chevron-down.png" alt="" id="chevron" />
+				</div>
 			</div>
 			<div class="left-bar"></div>
 			<div class="main-page"></div>
