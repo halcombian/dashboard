@@ -1,2 +1,23 @@
+@import "_mixins.scss";
+
 .top-bar {
+	grid-area: 1 / 2 / 2 / 4;
+	div {
+		@include displayFlex();
+		height: 100%;
+		background: lightgray;
+		margin: 2px;
+	}
+	.search-bar {
+		float: left;
+		width: 50%;
+	}
+	.profile {
+		float: right;
+		width: 25%;
+	}
+	.bell {
+		float: right;
+		width: 10%;
+	}
 }
