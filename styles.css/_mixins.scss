@@ -1,0 +1,12 @@
+@mixin displayFlex() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin displayGrid() {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+}
