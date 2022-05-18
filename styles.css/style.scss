@@ -1,0 +1,46 @@
+@mixin displayFlex() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin displayGrid() {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+}
+
+html,
+body {
+	@include displayFlex();
+	background: lightgray;
+	height: 100%;
+	width: 100%;
+}
+
+.main-container {
+	@include displayGrid();
+	grid-template-columns: 10% 60% 30%;
+	grid-template-rows: 10% 90%;
+	height: 90%;
+	width: 80%;
+	background: gray;
+	div {
+		background: darkgray;
+		width: 100%;
+		height: 100%;
+	}
+	.top-bar {
+		grid-area: 1 / 2 / 2 / 4;
+	}
+	.left-bar {
+		grid-area: 1 / 1 / 3 / 2;
+	}
+	.main-page {
+		grid-area: 2 / 2 / 3 / 3;
+	}
+	.right-page {
+		grid-area: 2 / 3 / 3 / 4;
+	}
+}
