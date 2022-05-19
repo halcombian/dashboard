@@ -10,3 +10,13 @@
 	align-items: center;
 	gap: 2px;
 }
+
+@mixin hw100() {
+	height: 100%;
+	width: 100%;
+}
+
+@mixin hw48() {
+	height: 48px;
+	width: 48px;
+}
