@@ -21,10 +21,6 @@ body {
 	div {
 		@include hw100();
 	}
-	.main-page {
-		background: darkgray;
-		grid-area: 2 / 2 / 3 / 3;
-	}
 	.right-page {
 		background: darkgray;
 		grid-area: 2 / 3 / 3 / 4;

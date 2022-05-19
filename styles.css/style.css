@@ -41,15 +41,6 @@ body {
   width: 100%;
 }
 
-.main-container .main-page {
-  background: darkgray;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
 .main-container .right-page {
   background: darkgray;
   -ms-grid-row: 2;
@@ -221,5 +212,14 @@ body {
 .left-bar #group-two img {
   height: 36px;
   width: 36px;
+}
+
+.main-page {
+  background: darkgray;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
 }
 /*# sourceMappingURL=style.css.map */
