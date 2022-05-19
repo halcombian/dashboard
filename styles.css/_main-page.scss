@@ -2,6 +2,25 @@
 @import "_variables.scss";
 
 .main-page {
-	background: darkgray;
+	@include displayGrid();
 	grid-area: 2 / 2 / 3 / 3;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 40% 30% 30%;
+	box-sizing: border-box;
+	padding: 0 5% 5% 4%;
+	gap: 2%;
+	div {
+		@include displayFlex();
+		justify-self: flex-start;
+		max-height: 100%;
+		max-width: 100%;
+		border-radius: 25px;
+		background: white;
+		box-shadow: 2px 2px 10px rgba($color: #d1d5db, $alpha: 1);
+		cursor: pointer;
+	}
+	.graph1 {
+		grid-area: 1 / 1 / 2 / 3;
+		cursor: auto;
+	}
 }
