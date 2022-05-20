@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	padding: 0 5% 5% 4%;
 	gap: 2%;
+	color: $slateblack;
 	div {
 		display: flex;
 		max-height: 100%;
@@ -63,7 +64,6 @@
 		display: inline-flex;
 		flex-direction: column;
 		padding: 10% 20% 10% 20%;
-		color: $slateblack;
 		p {
 			position: relative;
 			justify-self: flex-start;

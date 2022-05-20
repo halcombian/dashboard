@@ -5,6 +5,7 @@
 	grid-area: 1 / 2 / 2 / 4;
 	background: $backgroundWhite;
 	border-radius: $containerRadius;
+	color: $slateblack;
 	div {
 		@include displayFlex();
 		height: 100%;
