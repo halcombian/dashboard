@@ -2,7 +2,6 @@
 @import "_variables.scss";
 
 .top-bar {
-	@include hw100();
 	grid-area: 1 / 2 / 2 / 4;
 	background: $backgroundWhite;
 	border-radius: $containerRadius;

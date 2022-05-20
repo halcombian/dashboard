@@ -1,0 +1,48 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+.right-page {
+	@include whiteDiv();
+	display: block;
+	border-radius: 25px 25px 40px 25px;
+	display: grid;
+	grid-area: 2 / 3 / 3 / 4;
+	grid-template-rows: 49.75% 0.5% 49.75%;
+	box-sizing: border-box;
+	.top-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		box-sizing: border-box;
+		gap: 5%;
+		padding: 5%;
+		color: $slateblack;
+		.top-cell {
+			@include displayFlex();
+			@include whiteDiv();
+			flex-direction: column;
+			box-sizing: border-box;
+			cursor: pointer;
+			.cell-cap {
+				background: $purple;
+				border-radius: 25px 25px 0 0;
+				height: 20%;
+			}
+			p {
+				font-size: 20px;
+				text-align: center;
+				margin: 10% 0 5% 0;
+			}
+			span {
+				font-size: 48px;
+				text-align: center;
+				margin-bottom: 15%;
+			}
+		}
+	}
+	.row-border {
+		border-top: 2px solid $purple;
+		justify-self: center;
+		width: 75%;
+	}
+}
