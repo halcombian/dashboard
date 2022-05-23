@@ -39,6 +39,9 @@
 				margin-bottom: 15%;
 			}
 		}
+		.top-cell:hover {
+			box-shadow: 2px 2px 10px rgba($color: #9ca3af, $alpha: 1);
+		}
 	}
 	.row-border {
 		border-top: 2px solid $purple;
@@ -75,6 +78,9 @@
 				font-weight: bold;
 				opacity: 0.75;
 			}
+		}
+		.member:hover {
+			box-shadow: 2px 2px 10px rgba($color: #9ca3af, $alpha: 1);
 		}
 	}
 }

@@ -80,4 +80,7 @@
 			font-size: 72px;
 		}
 	}
+	.body-cell:hover {
+		box-shadow: 2px 2px 10px rgba($color: #9ca3af, $alpha: 1);
+	}
 }
